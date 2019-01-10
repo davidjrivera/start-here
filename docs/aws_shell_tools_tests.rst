@@ -40,6 +40,17 @@ Test **'aws-set-mfa-token' and 'aws-env'**:
   AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
   AWS_SESSION_TOKEN_EXPIRATION=2019-01-10 04:47:22+00:00
   AWS_SESSION_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+
+
+Test **'aws-refresh**'
+----------------------
+::
+
+  (python36) [david@scrap ~]$ aws-refresh
+  please enter 6 digit token code for your MFA device: 806005
+  (python36) [david@scrap ~]$
+
 
 
 Test **'aws-list-roles'**:
@@ -73,7 +84,7 @@ Test **'aws-display-assumed-role'**:
 ------------------------------------
 ::
 
-  (python36) [david@scrap home]$ aws-display-assumed-role
+ (python36) [david@scrap home]$ aws-display-assumed-role
  
 
   AWS_ASSUMED_ROLE_PROFILE:
